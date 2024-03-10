@@ -9,10 +9,6 @@ This project is inspired by the research paper titled "NSGA-Net: A Multi-Objecti
 
 ![overview](img/overview_redraw.png  "Overview of NSGA-Net")
 
-## Project Description
-
-This project is inspired by the research paper titled "NSGA-Net" (Author: [Author Name], DOI: [DOI]). The primary objective of this project is to provide educational support in the field of evolutionary algorithms, specifically focusing on the application of NSGA-Net.
-
 ### Background
 
 The project is developed as part of the coursework in Evolutionary Algorithms, Computer Science discipline at the University of Information Technology, VNU-HCMC. This initiative aligns with the academic curriculum to deepen understanding and practical implementation of evolutionary algorithms in the context of machine learning.
@@ -31,6 +27,7 @@ To validate the results by training from scratch, run
 ``` 
 # architecture found from macro search space
 python validation/train.py --net_type macro --cutout --batch_size 128 --epochs 20 
+
 # architecture found from micro search space
 python validation/train.py --net_type micro --arch NSGANet --layers 20 --init_channels 34 --filter_increment 4  --cutout --auxiliary --batch_size 96 --droprate 0.2 --SE --epochs 20
 ```
@@ -40,6 +37,7 @@ To run architecture search:
 ``` shell
 # macro search space
 python search/evolution_search.py --search_space macro --init_channels 32 --n_gens 30
+
 # micro search space
 python search/evolution_search.py --search_space micro --init_channels 16 --layers 8 --epochs 20 --n_offspring 20 --n_gens 30
 ``` 
@@ -47,8 +45,11 @@ python search/evolution_search.py --search_space micro --init_channels 16 --laye
 ## Visualization
 To visualize the architectures:
 ``` shell
-python visualization/macro_visualize.py NSGANet            # macro search space architectures
-python visualization/micro_visualize.py NSGANet            # micro search space architectures
+# macro search space architectures
+python visualization/macro_visualize.py NSGANet            
+
+# micro search space architectures
+python visualization/micro_visualize.py NSGANet            
 ```
 
 ## Citations
@@ -62,7 +63,7 @@ python visualization/micro_visualize.py NSGANet            # micro search space 
 ```
 
 ## Acknowledgement 
-Code heavily inspired and modified from [pymoo](https://github.com/msu-coinlab/pymoo), [DARTS](https://github.com/quark0/darts#requirements), [pytorch-cifar10](https://github.com/kuangliu/pytorch-cifar) and [NSGA-Net] (https://github.com/ianwhale/nsga-net)
+Code heavily inspired and modified from [pymoo](https://github.com/msu-coinlab/pymoo), [DARTS](https://github.com/quark0/darts#requirements), [pytorch-cifar10](https://github.com/kuangliu/pytorch-cifar) and [NSGA-Net](https://github.com/ianwhale/nsga-net)
 
 
 
