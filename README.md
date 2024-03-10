@@ -7,7 +7,7 @@ This project is inspired by the research paper titled "NSGA-Net: A Multi-Objecti
 >
 > *arXiv:1810.03522*
 
-![overview](https://github.com/vubaoquoc/uit-ea-nsganet/img/overview_redraw.png  "Overview of NSGA-Net")
+![overview](img/overview_redraw.png  "Overview of NSGA-Net")
 
 ## Project Description
 
