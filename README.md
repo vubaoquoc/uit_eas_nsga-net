@@ -1,4 +1,4 @@
-# uit-eas-nsganet
+# Implementation of NSGA-Net for Neural Network Architecture Search
 This project is inspired by the research paper titled "NSGA-Net: A Multi-Objective Genetic Algorithm for Neural Architecture Search". The primary objective of this project is to provide educational support in the field of evolutionary algorithms, specifically focusing on the application of NSGA-Net.
 
 > [NSGA-Net: Neural Architecture Search using Multi-Objective Genetic Algorithm](https://arxiv.org/abs/1810.03522)
